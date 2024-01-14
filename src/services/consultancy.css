@@ -1,0 +1,22 @@
+.legal{
+    background-image: url(../../src/pages/images/consultancy.png);
+}
+.heading1{
+    color: #FFF;
+font-family: Roboto;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 4.8px;
+
+}
+.heading2{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}

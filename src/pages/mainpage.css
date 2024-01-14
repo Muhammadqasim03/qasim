@@ -1,0 +1,55 @@
+.fashion{
+    color: #1C1D1E;
+font-family: Roboto;
+font-size: 84px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+font-variant: small-caps;
+letter-spacing: 0.168px;
+width: 716px;
+height: 100.709px;
+flex-shrink: 0;
+
+}
+.consultant{
+    color: rgba(28, 29, 30, 0.60);
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.04px;
+text-transform: capitalize;
+width: 650px;
+height: 70.907px;
+flex-shrink: 0;
+   
+}
+.main-card{
+    
+ /* background-color: rebeccapurple;   */
+    
+}
+.footer{
+     
+}
+
+
+.slider-card:hover{
+    background-color: rgb(178, 178, 250) !important;
+}
+
+.custom-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .custom-card:hover {
+    background-color: blue;
+    color: #fff;
+  }

@@ -7,6 +7,13 @@ import Forgotpassword from './pages/forgotpassword';
 import OTP from './pages/otp';
 import Home from './pages/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
+import MainPage from './pages/mainPage';
+import Fashion from './services/fashion'
+import Law from './services/law ';
+import HR from './services/hr';
+import Consultancy from './services/consultancy';
+import Form from './services/form';
 
 
 function App() 
@@ -16,13 +23,17 @@ function App()
     <div className="App">
       <BrowserRouter>
         <Routes>
+        <Route path="/" index element={<Home  />}/>
+        <Route path="/main" index element={<MainPage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" index element={<Login />} />
           <Route path="/forgotpassword" index element={<Forgotpassword />} />
-          <Route path="/otp" index element={<OTP />} />
-          <Route path="/home" index element={<Home  />} />
-         
-         
+          <Route path="/otp" index element={<OTP />} /> 
+          <Route path="/fashion" index element={<Fashion />} />
+          <Route path="/law" index element={<Law />} />
+          <Route path="/hr" index element={< HR />} />
+          <Route path="/consultancy" index element={< Consultancy />} />
+          <Route path="/form" index element={< Form />} />
         </Routes>
       </BrowserRouter> 
     </div>

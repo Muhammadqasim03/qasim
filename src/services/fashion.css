@@ -1,0 +1,32 @@
+.mainDiv{
+    height: 40rem;
+    background-image: url('../pages/images/fashion.png');
+
+}
+.heading1{
+    color: #FFF;
+
+text-align: center;
+font-family: Roboto;
+font-size: 45px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+font-variant: small-caps;
+letter-spacing: 0.168px;
+padding: 150px;
+margin-top: 10rem;
+}
+.heading2{
+    color: #FFCB21;
+font-family: Roboto;
+font-size: 84px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+font-variant: small-caps;
+letter-spacing: 0.168px;
+position: relative;
+bottom: 10rem;
+
+}

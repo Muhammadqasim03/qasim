@@ -1,0 +1,34 @@
+.hr{
+    background-image: url(../pages/images/human.png);
+    width: 1920px;
+    height: 620.67px;
+    flex-shrink: 0;
+}
+.heading2{
+    color: #FFF;
+font-family: Work Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 1106px;
+
+}
+.heading1{
+    color: #FFF;
+font-family: Roboto;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 4.8px;
+}
+.text{
+    color: #1C1D1E;
+font-family: Roboto;
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: 110%; /* 70.4px */
+letter-spacing: -2.88px;
+}
