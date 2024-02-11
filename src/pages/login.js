@@ -39,22 +39,28 @@ navigate('/main')
 
 <div className="bg-[#0457D2]">
   <div className="logo">  <h3 >LOGO</h3> </div>
-  <div className="welcom">
-    <h2> Welcome back to SIGN IN </h2>
+  <div className="wellcom">
+    <h2> Welcome back to <br/> <span className="signIn">SIGN IN</span> </h2>
   </div>
 </div>
 <div className="bg-[#FFF] ">
   <div className="content">
     <div>
-      <input value={email} style={{width:'15rem',height:'2.5rem', margin:'5px'}} onChange={(e) => setEmail(e.target.value)} className="input" type="email" placeholder="UserEmail" />
+      <input value={email} className="content-input"  onChange={(e) => setEmail(e.target.value)}  type="text" placeholder="Email" />
     </div>
     <div>
-      <input value={password} onChange={(e) => setPassword(e.target.value)} style={{width:'15rem',height:'2.5rem',margin:'5px'}} type="pass" placeholder="Password"/>
+      <input value={password} onChange={(e) => setPassword(e.target.value)} className="content-input " type="text" placeholder="Password"/>
     </div>
     <button style={{width:'15rem'}} onClick={() => { login() }} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">SignIn</button>
     <div className="mt-2  " style={{ textAlign: 'center' }}>   Don't have an 
           <a className=" p-1 underline " onClick={()=>{navigate('/signup')}}>Account?</a> </div>
+  
+          <div className="mt-2  " style={{ textAlign: 'center' }}> Forgot Password
+          <a className=" p-1 underline " onClick={()=>{navigate('/sendmail')}}>Go</a> 
+          
   </div>
+  </div>
+  
 
        
 </div>
