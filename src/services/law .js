@@ -6,8 +6,9 @@ import './law.css'
 import GenericCard from "./card";
 import question from '../../src/pages/images/question.png'
 import team from '../../src/pages/images/team.png'
+import { useNavigate } from "react-router-dom";
 const Law = () => {
-     
+     const navigate=useNavigate();
     return (
         <div>
             <Header title="qasim"  />
@@ -15,6 +16,9 @@ const Law = () => {
                 <div className="img">
                     <h2 className="heading1">LAW CONSULTANCY</h2>
                     <h3 className="heading2">lawyer, one trained and licensed to prepare, manage, and either prosecute or defend a court action as an agent for another and who also gives advice on legal matters that may or may not require court action. Lawyers apply the law to specific cases. They investigate the facts and the evidence by conferring with their clients and reviewing documents, and they prepare and file the pleadings in court.</h3>
+                    <button className="appointment-btn btn" type="button" onClick={() => {
+                        navigate('/form')
+                    }}>Book Appointment</button>
                 </div>
                 <div className="secondDiv">
                     <div className="text mt-5 mb-4">

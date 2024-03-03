@@ -27,3 +27,21 @@ font-weight: 500;
 line-height: 110%; /* 70.4px */
 letter-spacing: -2.88px;
 }
+
+.appointment-btn{
+    background-color:rgb(47, 128, 237);
+    position: relative;
+    top: -25%;
+    z-index: 1;
+    color: #FFF;
+    border: none;
+    border-radius:  0px;
+    
+}
+.appointment-btn:hover{
+    position: relative;
+    top: -25%;
+    z-index: 1;
+    color: #FFF;
+    border: 1px solid white;
+}

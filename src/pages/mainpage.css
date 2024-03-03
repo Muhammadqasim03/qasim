@@ -53,3 +53,6 @@ flex-shrink: 0;
     background-color: blue;
     color: #fff;
   }
+  #main-slider-container{
+    width: 100%!important
+  }

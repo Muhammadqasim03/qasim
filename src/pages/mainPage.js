@@ -16,15 +16,24 @@ function MainPage() {
          navigate('/login')
         }
      },[])
-    const sliderClick = (route) => {
+    const sliderForFasion = () => {
  navigate('/fashion')
     }
+    const sliderForHr = () => {
+ navigate('/hr')
+    }
+    const sliderForLeagel = () => {
+        navigate('/consultancy')
+           }
+           const sliderForLaw = () => {
+            navigate('/law')
+               }
     const cardData = [
         // Your card data here
-        {image:"",title:"HR Mangement",description:"",clickEvent:sliderClick},
-        {image:"",title:"Legal Consistancy",description:"",clickEvent:sliderClick},
-        {image:"",title:"Law Consultancy",description:" ",clickEvent:sliderClick},
-        {image:"",title:"Fashion Designing",description:" ",clickEvent:sliderClick},
+        {image:"",title:"HR Mangement",description:"",clickEvent:sliderForHr},
+        {image:"",title:"Legal Consistancy",description:"",clickEvent:sliderForLeagel},
+        {image:"",title:"Law Consultancy",description:" ",clickEvent:sliderForLaw},
+        {image:"",title:"Fashion Designing",description:" ",clickEvent:sliderForFasion},
        
         // Add more cards as needed
       ];

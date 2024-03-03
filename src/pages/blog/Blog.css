@@ -1,0 +1,42 @@
+/* BlogPost.css */
+
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post h2 {
+    color: #333;
+  }
+  
+  .blog-post .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post .content {
+    line-height: 1.6;
+  }
+  
+  /* App.css */
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
