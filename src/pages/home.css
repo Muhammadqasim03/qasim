@@ -10,16 +10,9 @@
     /* overflow-x: hidden; */
     /* overflow: hidden; */
     /* overflow-x: none; */
-     background-color: white;
-     
-    
+    ;    
 }
 .body-dark-mode{
-    min-height: 100vh;
-    width: 98vw;
-    /* overflow-x: hidden; */
-    /* overflow: hidden; */
-    /* overflow-x: none; */
      background-color: rgb(46, 45, 45);
     
 }
@@ -28,46 +21,58 @@
 
 
 
-.chose {
-    color: #1C1D1E;
-    font-family: Roboto;
-    font-size: 75px;
+
+.chose{
+    font-size: 50px;
     font-style: normal;
     font-weight: 550;
     line-height: normal;
     font-variant: small-caps;
     letter-spacing: 0.168px;
-    padding-top: 15rem;
-    margin-right: 44rem;
+    color: #1C1D1E;
+    font-family: Roboto;
+     padding-top: 12rem;
+    
 }
 
 .para {
     color: #1C1D1E;
     font-family: Roboto;
-    font-size: 75px;
+    font-size: 25px;
     font-style: normal;
-    font-weight: 550;
+    font-weight: 450;
     line-height: normal;
-   
     letter-spacing: 0.168px;
-    margin-right: 44rem;
+    /* margin-right: 44rem; */
    
+}
+.get-Started{
+    width: 190px;
+    height: 60px;
+    top: 747.92px;
+    left: 120px;
+    background: #2F80ED;
+    color: white;
+    
 }
 
 .main {
     background: linear-gradient(102deg, #F0E9EA 0%, rgba(248, 216, 122, 0.44) 54.74%, #E6DEE3 98.16%);
-    width: 100%;
-    height: 890.759px;
     flex-shrink: 0;
 }
 
-.supplementaryContent {
+.supplementaryContentDark {
+    background-color: rgb(46, 45, 45);
+    height: 20rem;
+    color: white;
+}
+.supplementaryContentLight {
     background-color: white;
     height: 20rem;
     color: black;
 }
 
-.heading1 {
+.heading1Light {
     color: #000;
     text-align: center;
     font-family: Roboto;
@@ -80,8 +85,19 @@
 
     margin-top: 5rem;
 }
+.heading1Dark{
+    color:white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.5%;
+    letter-spacing: -2.88px;
+    margin-top: 5rem;
+}
 
-.heading2 {
+.heading2Light {
     color: rgba(38, 50, 56, 0.50);
     text-align: center;
     font-family: Roboto;
@@ -89,10 +105,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-    /* 84.211% */
     margin-top: 2rem;
 }
-
+.heading2Dark{
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 2rem;
+}
 .footer {
     background: #1C1D1E;
     color: var(--base-light, #FFF);

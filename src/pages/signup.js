@@ -17,11 +17,13 @@ function Signup() {
       name: name,
       email: email,
       password: password,
+      userType:'USER'
     })
     axios.post("http://localhost:3000/auth/register", {
       name: name,
       email: email,
       password: password,
+      userType:'USER'
     })
       .then((response) => {
         setEmail('');

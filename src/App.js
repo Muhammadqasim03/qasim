@@ -15,6 +15,7 @@ import HR from './services/hr';
 import ResetPassword from './pages/passwordReset'
 import Consultancy from './services/consultancy';
 import Form from './services/form';
+import Dashboard from './dashboard/dashboard'
 
 
 function App() 
@@ -25,6 +26,7 @@ function App()
       <BrowserRouter>
         <Routes>
         <Route path="/" index element={<Home  />}/>
+        <Route path="/dashboard" index element={<Dashboard  />}/>
         <Route path="/main" index element={<MainPage />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" index element={<Login />} />

@@ -1,46 +1,63 @@
 import { useNavigate } from "react-router-dom";
-import React , {useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import './mainpage.css'
 import image from '../pages/images/style.png'
 import img from '../pages/images/style.png'
 import Header from "./header";
-
+import axios from "axios";
 import Carousel from 'react-bootstrap/Carousel';
 import ReactCardSlider from 'react-card-slider-component';
 import Footer from './footer'
 function MainPage() {
     const navigate = useNavigate()
-    useEffect(()=>{  
-        const token =  localStorage.getItem('token')
-        if(!token){
-         navigate('/login')
+    const [data, setData] = useState([])
+    useEffect(() => {
+        const token = localStorage.getItem('token')
+        if (!token) {
+            navigate('/login')
+        } else {
+            axios.get('http://localhost:3000/services/list', {
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            })
+                .then(response => {
+                    // Handle successful response
+                    console.log(response.data);
+                    const array = []
+                    response.data.data.map((obj, index) =>
+                        array.push({
+                            image: obj.imageUrl
+                            , title: obj.title,
+                            description: ''
+                            , clickEvent: index == 0 ? sliderForHr : index == 1 ? sliderForLeagel : index == 2 ? sliderForLaw : sliderForFasion
+                        })
+
+                    )
+                    setData(array)
+                })
+                .catch(error => {
+                    // Handle error
+                    console.error('Error fetching data:', error);
+                });
         }
-     },[])
+    }, [])
     const sliderForFasion = () => {
- navigate('/fashion')
+        navigate('/fashion')
     }
     const sliderForHr = () => {
- navigate('/hr')
+        navigate('/hr')
     }
     const sliderForLeagel = () => {
         navigate('/consultancy')
-           }
-           const sliderForLaw = () => {
-            navigate('/law')
-               }
-    const cardData = [
-        // Your card data here
-        {image:"",title:"HR Mangement",description:"",clickEvent:sliderForHr},
-        {image:"",title:"Legal Consistancy",description:"",clickEvent:sliderForLeagel},
-        {image:"",title:"Law Consultancy",description:" ",clickEvent:sliderForLaw},
-        {image:"",title:"Fashion Designing",description:" ",clickEvent:sliderForFasion},
-       
-        // Add more cards as needed
-      ];
-   
+    }
+    const sliderForLaw = () => {
+        navigate('/law')
+    }
+
     return (
         <div>
-           <Header/>
+            <Header />
             <Carousel style={{
                 background: "rgba(38, 50, 56, 0.3)",
                 height: "30rem",
@@ -80,9 +97,9 @@ function MainPage() {
             <div style={{ marginBottom: "10rem", marginTop: '10rem' }}>
                 <div className="mt-5 mb-5" > <h1> <strong>The Services That We Provide You</strong></h1>  </div>
                 <div className="mt-4 mb-4 ">
-                    <ReactCardSlider slides={cardData} style={{background:'red'}} /></div>
+                    <ReactCardSlider slides={data} style={{ background: 'red' }} /></div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
 
 

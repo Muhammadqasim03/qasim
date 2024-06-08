@@ -56,3 +56,11 @@ flex-shrink: 0;
   #main-slider-container{
     width: 100%!important
   }
+
+  .slider-card-title {
+    font-weight: 500 !important;
+    margin-top: 21px !important;
+    font-size: 21px !important;
+    font-family: sans-serif !important;
+  
+}
